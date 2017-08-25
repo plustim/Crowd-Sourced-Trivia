@@ -37,6 +37,14 @@ h4{
 }
 
 button#start{
+	cursor: pointer;
+	border: 1px solid black;
+	background: #ddd;
+	padding: 5px 20px;
+}
+
+button#start:hover{
+	background: #eee;
 }
 
 #question, #answers{
