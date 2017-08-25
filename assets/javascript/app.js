@@ -124,7 +124,7 @@ $(document).ready(function(){
 			]
 		}
 	];
-	
+
 	var triviaGame = {
 		current: 0,
 		countdown: 0,
@@ -154,13 +154,11 @@ $(document).ready(function(){
 			numberCorrect = 0;
 			current = 0;
 			$.ajax({
-				url: "https://opentdb.com/api.php?amount=10&category=27&difficulty=medium&type=multiple",
+				url: "https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple",
 				method: "GET",
 			    timeout: 5000,
 			    success: function( data, textStatus ){
 					triviaItems = data.results;
-					// start game once questions are loaded
-					console.log("questions loaded from opentdb.");
 					// show the question
 					triviaGame.ask(current);
 					// set the timer
