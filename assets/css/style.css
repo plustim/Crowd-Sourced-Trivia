@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Muli');
+*{
+	font-family: 'Muli', sans-serif;
+}
+
+body{
+	background: url("../images/type_@2X.png");
+}
+
+h1, h2, h3, h4, button, #clock{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 30px;
+}
+
+h1{
+	margin: 30px 0 0;
+	text-align: center;
+	color: white;
+}
+
+h4{
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+
+#clock{
+	margin: 30px;
+	text-align: center;
+	color: white;
+}
+
+#result h2, #result h3{
+	margin: 20px;
+	color: #333;
+}
+
+button#start{
+}
+
+#question, #answers{
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+	color: white;
+	display: none;
+	text-align: center;
+	font-size: 20px;
+}
+
+#answers{
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+#answers span{
+	margin: 6px;
+	padding: 6px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#answers span:hover{
+	padding: 4px 8px;
+	border: 2px solid white;
+}
+
+#result{
+	background: white url("../images/square_bg.png");
+	text-align: center;
+	width: 500px;
+	padding: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -270px;
+	top: 110px;
+}
+
+#result video{
+	height: 300px;
+	width: 500px;
+	margin: auto;
+}
